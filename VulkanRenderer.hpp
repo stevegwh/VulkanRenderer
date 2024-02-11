@@ -51,6 +51,10 @@ class VulkanRenderer
     void recordCommandBuffer(VkCommandBuffer commandBuffer, uint32_t imageIndex);
 
     void createSwapChain();
+
+    void recreateSwapChain();
+    
+    void cleanupSwapChain();
     
     void createImageViews();
 
@@ -87,6 +91,7 @@ class VulkanRenderer
     QueueFamilyIndices findQueueFamilies(VkPhysicalDevice device);
     
 public:
+    bool framebufferResized = false;
     void run();
 };
 
