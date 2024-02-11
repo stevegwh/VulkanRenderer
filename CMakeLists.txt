@@ -14,8 +14,8 @@ link_directories(
 add_executable(
         VulkanTomfoolery
         main.cpp
-        vkRenderer.cpp
-        vkRenderer.hpp
+        VulkanRenderer.cpp
+        VulkanRenderer.hpp
 )
 
 find_package(glfw3 3.3.8 REQUIRED)

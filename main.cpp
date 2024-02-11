@@ -2,11 +2,11 @@
 #include <stdexcept>
 #include <cstdlib>
 
-#include "vkRenderer.hpp"
+#include "VulkanRenderer.hpp"
 
 
 int main() {
-    vkRenderer app{};
+    VulkanRenderer app{};
 
     try {
         app.run();
